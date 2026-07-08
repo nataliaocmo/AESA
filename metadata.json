@@ -1,0 +1,6 @@
+{
+  "name": "AESA IoT Monitor",
+  "description": "An IoT-based independent living monitoring system for elderly individuals to detect falls, monitor ambient sensor data, trigger speaker alarms, and alert caregivers via a real-time mobile dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

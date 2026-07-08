@@ -1,0 +1,39 @@
+{
+  "collections": {
+    "telemetry": {
+      "description": "Historical telemetry logs sent from the M5Stack IoT device.",
+      "fields": {
+        "timestamp": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "timestamp"
+        },
+        "person_detected": {
+          "type": "boolean"
+        },
+        "volume_status": {
+          "type": "boolean"
+        },
+        "fall_detected": {
+          "type": "boolean"
+        },
+        "acceleration": {
+          "type": "number"
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "humidity": {
+          "type": "number"
+        },
+        "system_status": {
+          "type": "string"
+        },
+        "motion": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
