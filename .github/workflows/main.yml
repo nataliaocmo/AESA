@@ -1,0 +1,25 @@
+name: Deploy to Firebase Hosting on Push
+on:
+  push:
+    branches:
+      - main # Change this to master if your branch is named master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies & Build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: "" # Left blank intentionally since we use the token
+        env:
+          FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
