@@ -337,6 +337,7 @@ export default function App() {
         </div>
 
         {/* LOG RECORDS AND DOCUMENTATION PANEL */}
+        <div className="overflow-x-auto overflow-y-auto max-h-[450px] pr-2 scrollbar-thin scrollbar-thumb-slate-800">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl lg:col-span-15 flex flex-col" id="log-table">
             <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
@@ -389,6 +390,8 @@ export default function App() {
                   })}
                 </tbody>
               </table>
+            </div>
+              
             </div>
           </div>
 
